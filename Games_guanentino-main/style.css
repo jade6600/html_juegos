@@ -1,0 +1,224 @@
+
+/* ================================
+   CONFIGURACIÓN GENERAL
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #050505,
+        #111111,
+        #1d1d1d
+    );
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ================================
+   CONTENEDOR PRINCIPAL
+================================ */
+
+.container {
+    width: 90%;
+    max-width: 950px;
+    text-align: center;
+}
+
+
+/* ================================
+   TÍTULO
+================================ */
+
+h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+
+    color: #00ff88;
+
+    text-shadow:
+        0 0 10px #00ff88,
+        0 0 25px #00ff88;
+}
+
+.subtitle {
+    color: #aaaaaa;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+/* ================================
+   TARJETAS DE JUEGOS
+================================ */
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.game {
+    background: #101010;
+
+    border: 2px solid #333;
+
+    border-radius: 20px;
+
+    padding: 35px 25px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.6);
+
+    transition: 0.3s ease;
+}
+
+.game:hover {
+    transform: translateY(-8px);
+
+    border-color: #00ff88;
+
+    box-shadow:
+        0 0 25px rgba(0, 255, 136, 0.3);
+}
+
+
+/* ================================
+   ICONOS
+================================ */
+
+.game-icon {
+    font-size: 70px;
+    margin-bottom: 15px;
+}
+
+
+/* ================================
+   NOMBRES
+================================ */
+
+.game h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.game p {
+    color: #aaaaaa;
+
+    line-height: 1.5;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   BOTÓN JUGAR
+================================ */
+
+.play {
+    display: inline-block;
+
+    text-decoration: none;
+
+    color: #000000;
+
+    background: #00ff88;
+
+    padding: 13px 35px;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.play:hover {
+    background: white;
+
+    transform: scale(1.08);
+
+    box-shadow:
+        0 0 15px #ffffff;
+}
+
+
+/* ================================
+   COLORES ESPECÍFICOS
+================================ */
+
+/* Geometry Dash */
+
+.geometry {
+    border-color: #00ff88;
+}
+
+.geometry h2 {
+    color: #00ff88;
+}
+
+
+/* Tres en Raya */
+
+.tres-en-raya {
+    border-color: #00aaff;
+}
+
+.tres-en-raya h2 {
+    color: #00aaff;
+}
+
+.tres-en-raya .play {
+    background: #00aaff;
+}
+
+.tres-en-raya .play:hover {
+    background: white;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    margin-top: 40px;
+
+    color: #666666;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .games {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 92%;
+    }
+}
+
